@@ -8,6 +8,9 @@ public class CheckDigit
    public static int getCheck(int num) 
    {  
      /* to be implemented in part (a) */
+     int sum = 0;
+     for(int i = 1; i <= getNumberOfDigits; i++){
+     }
    }
  
   /** Returns true if numWithCheckDigit is valid, or false    
@@ -16,9 +19,13 @@ public class CheckDigit
    *  is between two and seven, inclusive.
    *                numWithCheckDigit >= 0     
    */     
-   public static boolean isValid(int numWithCheckDigit)    
-   {      
-     /* to be implemented in part (b) */    
+   public static boolean isValid(int numWithCheckDigit){      
+     /* to be implemented in part (b) */
+     int check = numWithCheck % 10;
+     if(check == newCheck){
+       return true;
+     }
+     return false;
    }    
    
    /** Returns the number of digits in num. */    
